@@ -53,7 +53,7 @@ public final class DefaultChannelId implements ChannelId {
 
     private static final AtomicInteger nextSequence = new AtomicInteger();
 
-    static ChannelId newInstance() {
+    static DefaultChannelId newInstance() {
         DefaultChannelId id = new DefaultChannelId();
         id.init();
         return id;

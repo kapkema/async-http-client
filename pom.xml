@@ -9,7 +9,7 @@
 	<groupId>org.asynchttpclient</groupId>
 	<artifactId>async-http-client-project</artifactId>
 	<name>Asynchronous Http Client Project</name>
-	<version>2.0.4</version>
+	<version>2.0.4-FIX</version>
 	<packaging>pom</packaging>
 	<description>
         The Async Http Client (AHC) library's purpose is to allow Java
@@ -216,15 +216,14 @@
 	</profiles>
 	<distributionManagement>
 		<repository>
-			<id>sonatype-nexus-staging</id>
-			<name>Sonatype Release</name>
-			<url>http://oss.sonatype.org/service/local/staging/deploy/maven2
-            </url>
+			<id>repo.tgtappdata.com</id>
+			<name>repo.tgtappdata.com-releases</name>
+			<url>https://repo.tgtappdata.com/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>sonatype-nexus-snapshots</name>
-			<url>${distMgmtSnapshotsUrl}</url>
+			<id>repo.tgtappdata.com</id>
+			<name>repo.tgtappdata.com-snapshots</name>
+			<url>https://repo.tgtappdata.com/artifactory/libs-release-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<repositories>
